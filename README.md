@@ -20,7 +20,7 @@ Maven dependency
 </dependency>
 ```
 
-+ repository:
+and repository:
 
 ```xml
 <repositories>
@@ -53,10 +53,12 @@ And don't forget to add dependencies to Appengine stubs/testing:
 How to use
 ----------
 
-Add `@WithGae` annotation to you specification. Just it.
+Add `@WithGae` annotation to your specification. Just it.
 
-For example:
+Example:
 ```Groovy
+import com.the6hours.spockappengine.WithGae
+
 @WithGae
 class MyTest extends Specification {
 
